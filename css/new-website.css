@@ -3,47 +3,14 @@
     height: auto;
 }
 
-.body {
-    font-family: 'Special Elite';
-    font-size: 25px;
+body {
+  font-family: 'Special Elite';
+  font-size: 25px;
+  background-image: url("warehousebg-1024x682.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
 }
 
-
-.topnav {
-    background-color: black;
-    overflow: hidden;
-}
-
-
-
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 40px 40px;
-    font-size: 17px;
-    font-family: 'Special Elite';
-    
-}
-
-.container {
-    position: relative;
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 3px;
-    background-color: black;
-  }
   
   .column {
     flex: 25%;
@@ -66,6 +33,12 @@
     }
   }
 
+  @media screen and (min-width:700px) {
+    header {
+        display: none !important;
+    }
+  }
+
 .navbar {
     background-color: black;
   }
@@ -76,4 +49,44 @@
 
   .jumbotron {
     font-family: 'Special Elite';
+  }
+
+  .jumbotron {
+    font-family: 'Special Elite';
+    text-align: center;
+    background: none !important;
+    color: white;
+  }
+  
+  .card-header {
+    font-family: 'Special Elite';
+    font-size: 25px;
+    background-color: black;
+  }
+  
+  .card-body {
+    font-family: 'Special Elite';
+    background-color: black;
+    color: white;
+  }
+  
+  #info-btn {
+    background: rgba(216, 47, 124, 1.0);
+    background: -webkit-linear-gradient(top left, rgba(216, 47, 124, 1.0), rgba(53, 242, 225, 1.0));
+    background: -moz-linear-gradient(top left, rgba(216, 47, 124, 1.0), rgba(53, 242, 225, 1.0));
+    background: linear-gradient(to bottom right, rgba(216, 47, 124, 1.0), rgba(53, 242, 225, 1.0));
+  }
+  
+  #member-btn {
+    background: rgba(195, 212, 112, 1.0);
+    background: -webkit-linear-gradient(top left, rgba(195, 212, 112, 1.0), rgba(35, 167, 123, 1.0));
+    background: -moz-linear-gradient(top left, rgba(195, 212, 112, 1.0), rgba(35, 167, 123, 1.0));
+    background: linear-gradient(to bottom right, rgba(195, 212, 112, 1.0), rgba(35, 167, 123, 1.0));
+  }
+  
+  #giving-btn {
+    background: rgba(19, 35, 207, 1.0);
+    background: -webkit-linear-gradient(top left, rgba(19, 35, 207, 1.0), rgba(223, 216, 15, 1.0));
+    background: -moz-linear-gradient(top left, rgba(19, 35, 207, 1.0), rgba(223, 216, 15, 1.0));
+    background: linear-gradient(to bottom right, rgba(19, 35, 207, 1.0), rgba(223, 216, 15, 1.0));
   }
