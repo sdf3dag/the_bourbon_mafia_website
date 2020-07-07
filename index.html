@@ -5,6 +5,7 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/f431655a93.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -62,7 +63,7 @@
         </div>
       </div>
 
-      <div class="container mt-2">
+      <div class="container pt-3 mt-2">
         <div class="card-deck">
           <div class="card text-center">
             <div class="card-header">
@@ -70,7 +71,7 @@
             </div>
             <div class="card-body">
               <p class="card-text">Check out our list of Bourbon Mafia members</p>
-              <a class="btn btn-primary" id="member-btn" href="#" role="button">Members Page</a>
+              <a class="btn btn-primary" id="member-btn" href="file:///H:/Personal/Code%20Louisville%20-%20May%202020/thebourbonmafia/members/index.html" role="button">Members Page</a>
             </div>
           </div>
           <div class="card text-center">
@@ -95,14 +96,53 @@
       </div>
         
             
-      <div class="jumbotron">
+      <div class="jumbotron jumbotron-social">
         <div class="container">
           <h4>Follow Us on Social Media</h4><br>
+          <div class="row text-center">
+            <div class="col-md">
+              <ul class="social-network social-circle">
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="icoInstagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div> 
+      </div>    
+
+      <div class="jumbotron jumbotron-private">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <img class="mb-4" src="img/19059478_10155193132535609_7420819948789185378_newpic.png" style="width:200px;">
+            </div>
+            <div class="col-sm-9">
+              <h2 class="display-4">The Bourbon Mafia Private Selections</h2><br>
+              <p class="lead">Be sure to check out our Private Selections from various distilleries.</p>
+            </div>
+            <div class="container text-center"> 
+            <a class="btn btn-outline-light" id="pick-btn" href="#" role="button">Checkout Our Private Picks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Javascript "go to top" button -->
+      <a id="topBtn"></a>
+
+      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <p>The Bourbon Mafia / Copyright &copy;2020</p>
+        </div>
+      </footer>
+
+
 
 
         <script src="js/bootstrap.bundle.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/topbutton.js"></script>
     </body>
 </html>
