@@ -1,0 +1,42 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("32745195_10211858501283464_7377303103424430080_n.jpg");
+}
+
+.jumbotron-member {
+    font-family: 'Special Elite';
+    text-align: center;
+    background-repeat: no-repeat;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("32745195_10211858501283464_7377303103424430080_n.jpg");
+    background-size: cover;
+  }
+
+
+
+/*Profile Card 5*/
+.profile-card-5{
+    margin-top:20px;
+    width: 300px;
+}
+
+.profile-card-5 .card-img-block {
+    width: 275px;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

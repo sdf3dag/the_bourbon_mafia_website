@@ -1,0 +1,15 @@
+
+
+
+
+.card-deck {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("developer-coding-in-php.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#currentmembers {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("IMG_4166.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

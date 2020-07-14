@@ -19,7 +19,8 @@
     <body>
 
 
-        <header>
+  <!-- Mobile Only Hamburger Menu -->
+      <header>
         <div class="navbar navbar-expand-lg navbar-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,7 +35,10 @@
         </div>
       </header>
 
-      <div class="jumbotron">
+
+
+  <!-- Header Jumbotron -->
+      <div class="jumbotron jumbotron-main">
         <div class="container">
           <img class="mb-4" src="transparentbourbonmafia.png" style="width:200px;">
           <h1 class="display-4">The Bourbon Mafia</h1><br>
@@ -43,106 +47,179 @@
         </div>
       </div>
 
-      <div class="container mb-4">
-        <div class="row">
-          <div class="column">
-            <img src="img/IMG_4159.JPG">
-            <img src="img/19961101_10155035932391939_2219645889578871319_n.jpg">
-          </div>
-          <div class="column">
-            <img src="img/IMG_4180.jpg">
-            <img src=""> 
-          </div>
-          <div class="column">
-            <img src="img/19703052_10213856581115245_4880982265189519854_o-300x300.jpg">
-            <img src="img/10636242_415421271941305_7119640853233891172_n.jpg">        
-          </div>
-          <div class="column">
-            <img src="img/IMG_4181.JPG">
-          </div>
-        </div>
-      </div>
 
-      <div class="container pt-3 mt-2">
-        <div class="card-deck">
-          <div class="card text-center">
-            <div class="card-header">
-              Members
+  <!-- Image Grid -->
+        <div class="container mb-4">
+          <div class="row">
+            <div class="column">
+              <img src="img/IMG_4159.JPG">
+              <img src="img/19961101_10155035932391939_2219645889578871319_n.jpg">
             </div>
-            <div class="card-body">
-              <p class="card-text">Check out our list of Bourbon Mafia members</p>
-              <a class="btn btn-primary" id="member-btn" href="file:///H:/Personal/Code%20Louisville%20-%20May%202020/thebourbonmafia/members/index.html" role="button">Members Page</a>
+            <div class="column">
+              <img src="img/IMG_4180.jpg">
+              <img src=""> 
             </div>
-          </div>
-          <div class="card text-center">
-            <div class="card-header">
-              Giving Back
+            <div class="column">
+              <img src="img/19703052_10213856581115245_4880982265189519854_o-300x300.jpg">
+              <img src="img/10636242_415421271941305_7119640853233891172_n.jpg">        
             </div>
-            <div class="card-body">
-              <p class="card-text">Check out where the money we raise goes to help others</p>
-              <a class="btn btn-primary" id="giving-btn" href="#" role="button">Who we've helped</a>
-            </div>
-          </div>
-          <div class="card text-center">
-            <div class="card-header">
-              An Inside Look
-            </div>
-            <div class="card-body">
-              <p class="card-text">Get more info about The Bourbon Mafia</p>
-              <a class="btn btn-primary" id="info-btn" href="#" role="button">About Us</a>
+            <div class="column">
+              <img src="img/IMG_4181.JPG">
             </div>
           </div>
         </div>
-      </div>
+
+
+<!--Members Card  -->
+        <div class="container pt-3 mt-2">
+          <div class="card-deck">
+            <div class="card text-center">
+              <div class="card-header">
+                Members
+              </div>
+              <div class="card-body">
+                <p class="card-text">Check out our list of Bourbon Mafia members</p>
+                <a class="btn btn-primary" id="member-btn" href="file:///C:/Users/USER/Desktop/Bourbon%20Mafia%20Website/the_bourbon_mafia_website/members/index.html" role="button">Members Page</a>
+              </div>
+            </div>
+
+
+<!-- Giving Back Card/Modal -->
+
+            <div class="card text-center">
+              <div class="card-header">
+                Giving Back
+              </div>
+                <div class="card-body">
+                  <p class="card-text">Check out where the money we raise goes to help others</p>
+                  <button type="button" class="btn btn-primary" id="giving-btn" data-toggle="modal" data-target="#charityModal">
+                    Who we've helped
+                  </button>
+                <div class="modal" id="charityModal" tabindex="-1" role="dialog" aria-labelledby="charityModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content align-items-md-center" id="charity">
+                      <div class="modal-body text-light pt-4">
+                        <div class="container-fluid">
+                          <div class="row mt-5">
+                            <div class="col-md">
+                              <h5 id="today"></h5>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center mt-4">
+                              <a class="btn btn-primary" id="charity-btn" href="file:///H:/Personal/Code%20Louisville%20-%20May%202020/thebourbonmafia/members/index.html" role="button">Click to see the charities we've helped through the years</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--About Us Card  -->
+
+            <div class="card text-center">
+              <div class="card-header">
+                An Inside Look
+              </div>
+              <div class="card-body">
+                <p class="card-text">Get more info about The Bourbon Mafia</p>
+                <a class="btn btn-primary" id="info-btn" href="#" role="button">About Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Social Media Jumbotron -->
+        <div class="jumbotron jumbotron-social">
+          <div class="container">
+            <h4>Follow Us on Social Media</h4><br>
+            <div class="row text-center">
+              <div class="col-md">
+                <ul class="social-network social-circle">
+                  <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#" class="icoInstagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>    
+
+
+        <!-- Private Selection Jumbotron -->
+        <div class="jumbotron jumbotron-private">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="mb-4" src="img/19059478_10155193132535609_7420819948789185378_newpic.png" style="width:200px;">
+              </div>
+              <div class="col-sm-9">
+                <h2 class="display-4">The Bourbon Mafia Private Selections</h2><br>
+                <p class="lead">Be sure to check out our Private Selections from various distilleries.</p>
+              </div>
+              <div class="container text-center"> 
+              <a class="btn btn-outline-light" id="pick-btn" href="#" role="button">Checkout Our Private Picks</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Javascript "go to top" button -->
+        <a id="topBtn"></a>
+
+
+       
+<!--Footer and Contact Us Section  -->
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+          <div class="container">
+            <div class="row">
+              <div class="column pr-5">
+                <h4><strong>Membership is currently CLOSED</strong></h4>
+                <br>
+                <p>To become a member of The Bourbon Mafia, you will need to be nominated during our open membership period, which is usually once a quarter. 
+                   If you do not know a current member, you’ll need to get to know a few of them. 
+                   Best way to meet their acquaintance, would be to meet them in person at one of our events, or be a part of the many Facebook groups we’re on.</p>
+              </div>
+              
+              <div class="column pl-4">
+                <h2>Contact Us</h2>
+                <p>Your message will be sent to one of our members</p>
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="container pt-4 text-center">
+            <p>The Bourbon Mafia / Copyright &copy;2020</p>
+          </div>
+        </footer>
+        
         
             
-      <div class="jumbotron jumbotron-social">
-        <div class="container">
-          <h4>Follow Us on Social Media</h4><br>
-          <div class="row text-center">
-            <div class="col-md">
-              <ul class="social-network social-circle">
-                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" class="icoInstagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>    
-
-      <div class="jumbotron jumbotron-private">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-3">
-              <img class="mb-4" src="img/19059478_10155193132535609_7420819948789185378_newpic.png" style="width:200px;">
-            </div>
-            <div class="col-sm-9">
-              <h2 class="display-4">The Bourbon Mafia Private Selections</h2><br>
-              <p class="lead">Be sure to check out our Private Selections from various distilleries.</p>
-            </div>
-            <div class="container text-center"> 
-            <a class="btn btn-outline-light" id="pick-btn" href="#" role="button">Checkout Our Private Picks</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Javascript "go to top" button -->
-      <a id="topBtn"></a>
-
-      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-        <div class="container text-center">
-          <p>The Bourbon Mafia / Copyright &copy;2020</p>
-        </div>
-      </footer>
-
+            
+        
+            
 
 
 
         <script src="js/bootstrap.bundle.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/topbutton.js"></script>
+        <script src="js/currentdate.js"></script>
+        
     </body>
 </html>
