@@ -1,0 +1,95 @@
+body {
+    font-family: 'Special Elite';
+    font-size: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("IMG_0039-768x528.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (min-width:700px) {
+  header {
+      display: none !important;
+  }
+  }
+  
+  .navbar {
+    background-color: black;
+    
+  }
+  
+  .nav-link {
+  font-family: 'Special Elite';
+  }
+  
+  .jumbotron-main {
+    font-family: 'Special Elite';
+    background: none !important;
+    color: white;
+    text-align: center;
+  }
+
+  /* CSS for To The Top button */
+#topBtn {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #topBtn::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #topBtn:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #topBtn:active {
+    background-color: #555;
+  }
+  #topBtn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+  .modal,body.modal-open {
+      padding-right: 0!important
+  }
+  
+  body.modal-open {
+      overflow: auto
+  }
+  
+  body.scrollable {
+      overflow-y: auto
+  }
+  
+  .modal-footer {
+      display: flex;
+      justify-content: flex-start;      
+  }
+  
+  
