@@ -1,15 +1,255 @@
-
-
-
-
-.card-deck {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("developer-coding-in-php.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+html {
+	height: 100%;
+	margin: 0;
 }
 
-#currentmembers {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("IMG_4166.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+body {
+	font-family: 'Special Elite';
+	font-size: 25px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("32684824_10211858494763301_8289605026687483904_n.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:700px) {
+header {
+    display: none !important;
+	}
+}
+
+.navbar {
+  background-color: black;
+  
+}
+
+.nav-link {
+font-family: 'Special Elite';
+}
+
+.jumbotron-main {
+  font-family: 'Special Elite';
+  background: none !important;
+  /* background-repeat: no-repeat; */
+  color: white;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("23754727_10210607008916937_2109819471112229312_n.jpg");
+  background-size: cover; */
+  text-align: center;
+}
+
+
+
+/* CSS for To The Top button */
+#topBtn {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#topBtn::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#topBtn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#topBtn:active {
+  background-color: #555;
+}
+#topBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.media-card-1 {
+	background-image: url('IMG_4166.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:75%;
+	max-width: 700px;
+	height: 400px;
+	display: block;
+	margin-left: 1rem;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+}
+
+.media-card-2 {
+	background-image: url('FB_IMG_1576680219884_new.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:75%;
+	max-width: 600px;
+	height: 400px;
+	display: block;
+	margin-inline-end: auto;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+}
+
+
+
+.color-overlay {
+	width:100%;
+	height: 100%;
+	border-radius: 8px;
+	background: linear-gradient(to right, rgba(42,159,255,.2) 0%,rgba(33,33,32,1) 60%,rgba(33,33,32,1) 100%);
+	background-blend-mode: multiply;
+}
+
+.media-content {
+	width: 40%;
+	display: block;
+	position: relative;
+	float: right;
+  	padding-right: 1em;
+  	text-align: center;
+  	top: 20%;
+}
+
+.media-title {
+	color: #ffffff;
+	margin-bottom: .25em;
+	opacity: .75;
+}
+	
+.media-info {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .8em;
+	color: white;
+	line-height: 1;
+	margin: 0;
+	font-weight: 700;
+	opacity:.5;
+}
+	
+.media-header {
+	margin-bottom: 2em;
+}
+
+.media-desc {
+	font-weight: 300;
+	opacity: .84;
+  	margin-bottom: 2em;
+  	color: white;
+}
+
+
+.btn {
+	padding: .8em 2em;
+	background-color: white;
+	color: white;
+  border-radius: 2em;
+}
+
+.btn-outline {
+	background-color: white;
+	border: 3px solid #ffffff;
+}
+
+.btn::before {
+	font-family: 'Material Icons';
+	vertical-align: middle;
+	font-size: 1.5em;
+	padding-right:.5em;
+}
+
+.btn-outline:hover {
+	border-color: white;
+	color: orange;
+	box-shadow: 0px 1px 8px 0px rgba(245,199,0,.2);
+}
+
+
+
+@media (max-width:1000px) {
+	.media-content {
+		width: 50%;
+		max-width: 95%;
+	}
+}
+
+@media (max-width:800px) {
+	.media-card {
+		width: 95%;
+		max-width: 95%;
+	}
+}
+
+@media (max-width:600px) {
+	.media-card,.media-card:nth-child(2),.media-card:nth-child(3) {
+		background-position:50% 0%;
+		background-size: cover;
+		height: 400px;
+	}
+	
+	.color-overlay {
+		background: linear-gradient(to bottom, rgba(42,159,255,.2) 0%,rgba(33,33,32,1) 60%,rgba(33,33,32,1) 100%);
+	}
+	
+	.media-content {
+		margin-top: 4.2em;
+		width: 90%
+	}	
+}
+
+.card-about {
+	display: block;
+	margin-left: 1rem;
+  	border-radius: 8px;
+  	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+  	font-family: 'Special Elite';
+}
+
+.card-image-1 {
+  	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("CS_2018May_Beam-Suntory_tcm88-3792265.jpg");
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	max-width: 700px;
+	height: auto;
+}
+
+.card-charity {
+	display: block;
+	margin-left: 1rem;
+  	border-radius: 8px;
+  	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+  	font-family: 'Special Elite';
+}
+
+.card-image-2 {
+  	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("22780275_10155584053710609_7855141906872815814_n-768x578.jpg");
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	max-width: 700px;
+	height: auto;
+}
+
+.footer {
+	color: white;
 }
