@@ -3,6 +3,11 @@
     height: auto;
 }
 
+html {
+	height: 100%;
+	margin: 0;
+}
+
 body {
     font-family: 'Special Elite';
     font-size: 25px;
