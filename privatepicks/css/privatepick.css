@@ -5,7 +5,6 @@ html {
 
 body {
   font-family: 'Special Elite';
-  font-size: 25px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("FB_IMG_1581283736140.jpg");
   background-size: cover;
   background-repeat: repeat;
@@ -39,6 +38,10 @@ body {
   background: none !important;
   color: white;
   text-align: center;
+}
+
+.card {
+  font-family: 'Special Elite';
 }
 
   /* CSS for To The Top button */
@@ -83,24 +86,101 @@ body {
   visibility: visible;
 }
 
-/* .mafia-picks {
-  position: relative;
-  z-index: 1;  
+
+.card-image-fourroses {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("FB_IMG_1581116422962.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 400px;
   display: block;
-  width: 500px;
-  height: auto;
-  
+	border-radius: 8px;
+  box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
 }
 
-.card-img-top {
-  background: rgba(#000, 0.4);
-  height: 350px;
+.card-image-jimbeam {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("b_388.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: block;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
 }
 
-.card-img-overlay {
-  font-family: 'Special Elite';
-} */
+.card-image-wildturkey {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("distillery_nevertamed_gallery9_wild_turkey.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 400px;
+  display: block;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+}
 
+.card-image-makersmark {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("event-image-5488888-71ae5e09-9262-4900-a247-18a670a34136-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 400px;
+  display: block;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+}
 
+.card-image-buffalotrace {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("Buffalo_Trace_Tower.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 400px;
+  display: block;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+}
 
+.card-image-angelsenvy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("IMG_20200131_150003.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 400px;
+  display: block;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+}
 
+.card-image-bulleit {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("very_large_square_u45-bulleitbourbonhero.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  height: 400px;
+  display: block;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+}
+
+.card-image-jefferson {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("publicviewattachment-13.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  height: 400px;
+  display: block;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+}
+
+.card-image-few {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("fewspirits.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  height: 400px;
+  display: block;
+	border-radius: 8px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+}
+
+.card-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
